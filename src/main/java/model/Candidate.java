@@ -16,14 +16,6 @@ public class Candidate {
         this.periodsInUkr = periodsInUkr;
     }
 
-    public int calculatePeriodInUkr(String periodsInUkr) {
-        if (periodsInUkr == null) {
-            throw new NullPointerException("Period must be valid!");
-        }
-        String[] parts = periodsInUkr.split("-");
-        return Integer.parseInt(parts[1]) - Integer.parseInt(parts[0]);
-    }
-
     public int getAge() {
         return age;
     }
